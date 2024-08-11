@@ -1,0 +1,15 @@
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\bin\Debug\net8.0\SocialMedia_Bussiness.deps.json
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\bin\Debug\net8.0\SocialMedia_Bussiness.dll
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\bin\Debug\net8.0\SocialMedia_Bussiness.pdb
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\bin\Debug\net8.0\SocialMedia_DataAccess.dll
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\bin\Debug\net8.0\SocialMedia_DataAccess.pdb
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\obj\Debug\net8.0\SocialMedia_Bussiness.csproj.AssemblyReference.cache
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\obj\Debug\net8.0\SocialMedia_Bussiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\obj\Debug\net8.0\SocialMedia_Bussiness.AssemblyInfoInputs.cache
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\obj\Debug\net8.0\SocialMedia_Bussiness.AssemblyInfo.cs
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\obj\Debug\net8.0\SocialMedia_Bussiness.csproj.CoreCompileInputs.cache
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\obj\Debug\net8.0\SocialMe.A1DE026C.Up2Date
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\obj\Debug\net8.0\SocialMedia_Bussiness.dll
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\obj\Debug\net8.0\refint\SocialMedia_Bussiness.dll
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\obj\Debug\net8.0\SocialMedia_Bussiness.pdb
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_Bussiness\obj\Debug\net8.0\ref\SocialMedia_Bussiness.dll

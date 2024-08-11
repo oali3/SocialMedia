@@ -1,0 +1,12 @@
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\bin\Debug\net8.0\SocialMedia_DataAccess.deps.json
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\bin\Debug\net8.0\SocialMedia_DataAccess.dll
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\bin\Debug\net8.0\SocialMedia_DataAccess.pdb
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.csproj.AssemblyReference.cache
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.AssemblyInfoInputs.cache
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.AssemblyInfo.cs
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.csproj.CoreCompileInputs.cache
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.dll
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\obj\Debug\net8.0\refint\SocialMedia_DataAccess.dll
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.pdb
+C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\obj\Debug\net8.0\ref\SocialMedia_DataAccess.dll
