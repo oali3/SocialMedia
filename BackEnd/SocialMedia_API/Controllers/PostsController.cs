@@ -13,7 +13,8 @@ namespace SocialMedia_API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<IEnumerable<PostDTO>> GetAllPosts()
         {
-            List<PostDTO> list = clsPost.GetAllPosts(); if (list.Count == 0)
+            List<PostDTO> list = clsPost.GetAllPosts();
+            if (list.Count == 0)
                 return NotFound("No Post Found");
             return Ok(list);
         }
@@ -67,6 +68,7 @@ namespace SocialMedia_API.Controllers
             post.Title = dto.Title;
             post.Body = dto.Body;
             post.Image = dto.Image;
+            post.CreatedAt = dto.CreatedAt;
 
             post.Save();
 

@@ -10,3 +10,16 @@ C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedi
 C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\obj\Debug\net8.0\refint\SocialMedia_DataAccess.dll
 C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.pdb
 C:\C#\APIs\SocialMedia_API_sn\SocialMedia_DataAccess\obj\Debug\net8.0\ref\SocialMedia_DataAccess.dll
+C:\GitHub\SocialMedia\BackEnd\SocialMedia_DataAccess\bin\Debug\net8.0\SocialMedia_DataAccess.deps.json
+C:\GitHub\SocialMedia\BackEnd\SocialMedia_DataAccess\bin\Debug\net8.0\SocialMedia_DataAccess.dll
+C:\GitHub\SocialMedia\BackEnd\SocialMedia_DataAccess\bin\Debug\net8.0\SocialMedia_DataAccess.pdb
+C:\GitHub\SocialMedia\BackEnd\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.csproj.AssemblyReference.cache
+C:\GitHub\SocialMedia\BackEnd\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\SocialMedia\BackEnd\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.AssemblyInfoInputs.cache
+C:\GitHub\SocialMedia\BackEnd\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.AssemblyInfo.cs
+C:\GitHub\SocialMedia\BackEnd\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.csproj.CoreCompileInputs.cache
+C:\GitHub\SocialMedia\BackEnd\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.sourcelink.json
+C:\GitHub\SocialMedia\BackEnd\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.dll
+C:\GitHub\SocialMedia\BackEnd\SocialMedia_DataAccess\obj\Debug\net8.0\refint\SocialMedia_DataAccess.dll
+C:\GitHub\SocialMedia\BackEnd\SocialMedia_DataAccess\obj\Debug\net8.0\SocialMedia_DataAccess.pdb
+C:\GitHub\SocialMedia\BackEnd\SocialMedia_DataAccess\obj\Debug\net8.0\ref\SocialMedia_DataAccess.dll

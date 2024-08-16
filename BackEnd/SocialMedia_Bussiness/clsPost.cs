@@ -17,7 +17,8 @@ namespace SocialMedia_Bussiness
         public string? Title { get; set; }
         public string? Body { get; set; }
         public string? Image { get; set; }
-        public PostDTO DTO { get { return new PostDTO(Id, UserId, Title, Body, Image); } }
+        public DateTime CreatedAt { get; set; }
+        public PostDTO DTO { get { return new PostDTO(Id, UserId, Title, Body, Image, CreatedAt); } }
 
         public clsPost(PostDTO dto, enMode mode = enMode.AddNew)
         {
@@ -26,6 +27,7 @@ namespace SocialMedia_Bussiness
             Title = dto.Title;
             Body = dto.Body;
             Image = dto.Image;
+            CreatedAt = dto.CreatedAt;
 
             Mode = mode;
         }

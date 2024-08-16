@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,13 +12,17 @@ namespace SocialMedia_DataAccess
 {
     public class PostDTO
     {
-        public PostDTO(int id, int userid, string? title, string? body, string? image)
+        public PostDTO(int id, int userid, string? title, string? body, string? image, DateTime createdat, bool containsAuthor = false)
         {
             Id = id;
             UserId = userid;
             Title = title;
             Body = body;
             Image = image;
+            CreatedAt = createdat;
+
+            if (containsAuthor)
+                Aothor = clsUsersData.GetUserById(userid);
         }
 
         public int Id { get; set; }
@@ -25,6 +30,9 @@ namespace SocialMedia_DataAccess
         public string? Title { get; set; }
         public string? Body { get; set; }
         public string? Image { get; set; }
+        public DateTime CreatedAt { get; set; }
+        
+        public UserDTO? Aothor { get; set; }
     }
     public class clsPostsData
     {
@@ -49,7 +57,9 @@ namespace SocialMedia_DataAccess
                         reader.GetInt32("UserId"),
                         reader.GetString("Title"),
                         reader.GetString("Body"),
-                        s4));
+                        s4,
+                        reader.GetDateTime("CreatedAt"),
+                        true));
                     }
                 }
             }
@@ -75,7 +85,8 @@ namespace SocialMedia_DataAccess
                         reader.GetInt32("UserId"),
                         reader.GetString("Title"),
                         reader.GetString("Body"),
-                        s4);
+                        s4,
+                        reader.GetDateTime("CreatedAt"));
                     }
                 }
             }
@@ -90,6 +101,7 @@ namespace SocialMedia_DataAccess
                 command.Parameters.AddWithValue("@Title", dto.Title);
                 command.Parameters.AddWithValue("@Body", dto.Body);
                 command.Parameters.AddWithValue("@Image", (string.IsNullOrEmpty(dto.Image) ? DBNull.Value : dto.Image));
+                command.Parameters.AddWithValue("@CreatedAt", dto.CreatedAt);
 
                 SqlParameter OutParam = new SqlParameter("@Id", SqlDbType.Int)
                 {
@@ -115,6 +127,7 @@ namespace SocialMedia_DataAccess
                 command.Parameters.AddWithValue("@Title", dto.Title);
                 command.Parameters.AddWithValue("@Body", dto.Body);
                 command.Parameters.AddWithValue("@Image", (string.IsNullOrEmpty(dto.Image) ? DBNull.Value : dto.Image));
+                command.Parameters.AddWithValue("@CreatedAt", dto.CreatedAt);
 
                 connection.Open();
                 AffectedRows = command.ExecuteNonQuery();
@@ -164,6 +177,7 @@ namespace SocialMedia_DataAccess
             return AffectedRows != 0;
         }
     }
+
 
 
 }
