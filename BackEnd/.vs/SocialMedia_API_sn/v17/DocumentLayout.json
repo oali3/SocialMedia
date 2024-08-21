@@ -13,10 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{57D8839A-92A9-4365-80F5-D67A1C1ACA2E}|SocialMedia_DataAccess\\SocialMedia_DataAccess.csproj|c:\\github\\socialmedia\\backend\\socialmedia_dataaccess\\clspostsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{57D8839A-92A9-4365-80F5-D67A1C1ACA2E}|SocialMedia_DataAccess\\SocialMedia_DataAccess.csproj|solutionrelative:socialmedia_dataaccess\\clspostsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E2EA083-9B34-413E-8D6F-980DDE7E6019}|SocialMedia_API\\SocialMedia_API.csproj|c:\\github\\socialmedia\\backend\\socialmedia_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E2EA083-9B34-413E-8D6F-980DDE7E6019}|SocialMedia_API\\SocialMedia_API.csproj|solutionrelative:socialmedia_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,7 +44,7 @@
               "RelativeDocumentMoniker": "SocialMedia_API\\Controllers\\PostsController.cs",
               "ToolTip": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_API\\Controllers\\PostsController.cs",
               "RelativeToolTip": "SocialMedia_API\\Controllers\\PostsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T13:19:36.326Z",
               "EditorCaption": ""
@@ -61,9 +57,10 @@
               "RelativeDocumentMoniker": "SocialMedia_Bussiness\\clsPost.cs",
               "ToolTip": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_Bussiness\\clsPost.cs",
               "RelativeToolTip": "SocialMedia_Bussiness\\clsPost.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T13:19:34.662Z"
+              "WhenOpened": "2024-08-13T13:19:34.662Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -73,21 +70,10 @@
               "RelativeDocumentMoniker": "SocialMedia_DataAccess\\clsPostsData.cs",
               "ToolTip": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_DataAccess\\clsPostsData.cs",
               "RelativeToolTip": "SocialMedia_DataAccess\\clsPostsData.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAgwD0AAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T13:19:22.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "SocialMedia_API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "SocialMedia_API\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T18:48:52.134Z"
+              "WhenOpened": "2024-08-13T13:19:22.787Z",
+              "EditorCaption": ""
             }
           ]
         },

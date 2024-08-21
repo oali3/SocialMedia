@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Programmin Advices</a>
@@ -31,15 +32,30 @@
                     </li>
                 </ul>
 
-                <div style="display: flex; justify-content: end; width: 100%;">
-                    <button class="btn btn-outline-success" style="margin-right: 10px;">Register</button>
-                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        style="margin-right: 20px;">Login</button>
+                <!-- Bottons -->
+                <div class="d-flex justify-content-end w-100">
+                    <div class="w-100 justify-content-end mx-4" style="display: none;">
+                        <img id="header-picture" class="rounded-circle border me-3" style="height: 40px; width: 40px;"
+                            src="Pics/0.png" alt="??">
+                        <b id="header-username" style="margin-right: 0px; font-size: 22px;">@gg</b>
+                    </div>
+                    <div id="div-login" style="display: flex; justify-content: end; ">
+                        <button id="btn-login" class="btn btn-outline-success" data-bs-toggle="modal"
+                            data-bs-target="#signup-modal" style="margin-right: 10px;">Sign Up</button>
+                        <button id="btn-signup" class="btn btn-outline-success" data-bs-toggle="modal"
+                            data-bs-target="#login-modal" style="margin-right: 20px;">Login</button>
+                    </div>
+                    <div id="div-logout" style="display: flex; justify-content: end;">
+                        <button onclick="btnLogoutClicked()" id="btn-logout" class="btn btn-outline-danger"
+                            style="margin-right: 15px;">Logout</button>
+                    </div>
                 </div>
+
             </div>
         </div>
     </nav>
 
+    <!-- Main Content -->
     <div class="container">
         <div class="d-flex justify-content-center mt-4">
             <div id="Post-Container" class="col-8">
@@ -74,8 +90,15 @@
         </div>
     </div>
 
+    <!-- Add Post Button -->
+    <button id="add-post-btn" class="bg-primary border shadow d-none" data-bs-toggle="modal"
+        data-bs-target="#add-post-modal">+</button>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -102,6 +125,82 @@
             </div>
         </div>
     </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="example2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="example2ModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Name:</label>
+                            <input type="text" class="form-control" id="name-input"></input>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="email-input"></input>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">UserName:</label>
+                            <input type="text" class="form-control" id="username-signup-input">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Password:</label>
+                            <input type="password" class="form-control" id="password-signup-input"></input>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="btn-login" type="button" class="btn btn-primary"
+                        onclick="btnSignUpClicked()">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Post Modal -->
+    <div class="modal fade" id="add-post-modal" tabindex="-1" aria-labelledby="example3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="example2ModalLabel">Add Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="post-title" class="col-form-label">Title:</label>
+                            <input type="text" class="form-control" id="post-title"></input>
+                        </div>
+                        <div class="mb-3">
+                            <label for="post-body" class="col-form-label">Body:</label>
+                            <textarea class="form-control" id="post-body"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="post-image" class="col-form-label">Title:</label>
+                            <input type="file" class="form-control" id="post-image"></input>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="btn-login" type="button" class="btn btn-primary"
+                        onclick="btnAddPostClicked()">Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Alerts -->
+    <div id="successful-login" class="show fade" style="width: 30%; position: fixed; right: 0; bottom: 0;"></div>
+
+
 
     <script src="main.js"></script>
 </body>

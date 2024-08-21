@@ -12,7 +12,7 @@ namespace SocialMedia_DataAccess
 {
     public class PostDTO
     {
-        public PostDTO(int id, int userid, string? title, string? body, string? image, DateTime createdat, bool containsAuthor = false)
+        public PostDTO(int id, int userid, string? title, string? body, string? image, DateTime? createdat)
         {
             Id = id;
             UserId = userid;
@@ -20,18 +20,15 @@ namespace SocialMedia_DataAccess
             Body = body;
             Image = image;
             CreatedAt = createdat;
-
-            if (containsAuthor)
-                Aothor = clsUsersData.GetUserById(userid);
+            
+            Aothor = clsUsersData.GetUserById(userid);
         }
-
         public int Id { get; set; }
         public int UserId { get; set; }
         public string? Title { get; set; }
         public string? Body { get; set; }
         public string? Image { get; set; }
-        public DateTime CreatedAt { get; set; }
-        
+        public DateTime? CreatedAt { get; set; }         
         public UserDTO? Aothor { get; set; }
     }
     public class clsPostsData
@@ -58,8 +55,7 @@ namespace SocialMedia_DataAccess
                         reader.GetString("Title"),
                         reader.GetString("Body"),
                         s4,
-                        reader.GetDateTime("CreatedAt"),
-                        true));
+                        reader.GetDateTime("CreatedAt")));
                     }
                 }
             }
@@ -101,7 +97,8 @@ namespace SocialMedia_DataAccess
                 command.Parameters.AddWithValue("@Title", dto.Title);
                 command.Parameters.AddWithValue("@Body", dto.Body);
                 command.Parameters.AddWithValue("@Image", (string.IsNullOrEmpty(dto.Image) ? DBNull.Value : dto.Image));
-                command.Parameters.AddWithValue("@CreatedAt", dto.CreatedAt);
+                if (dto.CreatedAt != null)
+                    command.Parameters.AddWithValue("@CreatedAt", dto.CreatedAt);
 
                 SqlParameter OutParam = new SqlParameter("@Id", SqlDbType.Int)
                 {

@@ -6,3 +6,18 @@
 body {
     background-color: #f0ecff;
 }
+
+#add-post-btn {
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}

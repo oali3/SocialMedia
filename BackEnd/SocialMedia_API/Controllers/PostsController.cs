@@ -18,6 +18,8 @@ namespace SocialMedia_API.Controllers
                 return NotFound("No Post Found");
             return Ok(list);
         }
+        
+        
         [HttpGet("{id}", Name = "GetPostById")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -34,6 +36,8 @@ namespace SocialMedia_API.Controllers
 
             return Ok(post.DTO);
         }
+        
+        
         [HttpPost(Name = "AddPost")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -48,6 +52,7 @@ namespace SocialMedia_API.Controllers
 
             return CreatedAtRoute("AddPost", post.DTO);
         }
+
 
         [HttpPut("{id}", Name = "UpdatePost")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -74,6 +79,7 @@ namespace SocialMedia_API.Controllers
 
             return Ok("Post Updated Successfully");
         }
+
 
         [HttpDelete("{id}", Name = "DeletePost")]
         [ProducesResponseType(StatusCodes.Status200OK)]

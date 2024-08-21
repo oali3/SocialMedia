@@ -49,7 +49,7 @@ namespace SocialMedia_API.Controllers
 
             clsUser? user = clsUser.Find(dto.UserName);
 
-            if (user == null)
+            if (user == null)                
                 return NotFound("User Not Found");
 
             if (user?.Password != dto.Password)
@@ -68,7 +68,7 @@ namespace SocialMedia_API.Controllers
 
             HttpContext.Response.Headers.Append("Authorization", $"Bearer {Token.Token}");
 
-            return CreatedAtRoute("RegisterUser", new { token = Token.Token });
+            return CreatedAtRoute("RegisterUser", new { token = Token.Token, user = user.DTO});
         }
 
 
