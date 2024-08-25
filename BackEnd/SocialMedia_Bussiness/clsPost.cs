@@ -1,6 +1,7 @@
 ﻿using SocialMedia_DataAccess;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,9 +34,9 @@ namespace SocialMedia_Bussiness
         }
 
 
-        public static List<PostDTO> GetAllPosts()
+        public static List<PostDTO> GetAllPosts(int? page, int? count, ref int? LastPage)
         {
-            return clsPostsData.GetAllPosts();
+            return clsPostsData.GetAllPosts(page, count, ref LastPage);
         }
 
         public static clsPost? Find(int Id)

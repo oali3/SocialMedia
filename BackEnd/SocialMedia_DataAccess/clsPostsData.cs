@@ -20,20 +20,25 @@ namespace SocialMedia_DataAccess
             Body = body;
             Image = image;
             CreatedAt = createdat;
-            
+
             Aothor = clsUsersData.GetUserById(userid);
+            Comments = clsCommentsData.GetCommentsByPostId(id);
+            CommentsCount = Comments.Count;
         }
         public int Id { get; set; }
         public int UserId { get; set; }
+        public int CommentsCount { get; set; }
         public string? Title { get; set; }
         public string? Body { get; set; }
         public string? Image { get; set; }
         public DateTime? CreatedAt { get; set; }         
         public UserDTO? Aothor { get; set; }
+        public List<CommentDTO> Comments { get; set; }
+        
     }
     public class clsPostsData
     {
-        public static List<PostDTO> GetAllPosts()
+        public static List<PostDTO> GetAllPosts(int? page, int? count, ref int? LastPage)
         {
             List<PostDTO> list = new List<PostDTO>();
 
@@ -41,6 +46,10 @@ namespace SocialMedia_DataAccess
             using (SqlCommand command = new SqlCommand("SP_Posts_GetAllPosts", connection))
             {
                 command.CommandType = CommandType.StoredProcedure;
+                if (page != null)
+                    command.Parameters.AddWithValue("@Page", page);
+                if (count != null)
+                    command.Parameters.AddWithValue("@Count", count);
 
                 connection.Open();
                 using (SqlDataReader reader = command.ExecuteReader())
@@ -58,9 +67,65 @@ namespace SocialMedia_DataAccess
                         reader.GetDateTime("CreatedAt")));
                     }
                 }
+
+                using (SqlCommand command2 = new SqlCommand("SP_Posts_GetLastPage", connection))
+                {
+                    command2.CommandType = CommandType.StoredProcedure;
+                    if (count != null)
+                        command2.Parameters.AddWithValue("@Count", count);
+
+                    SqlParameter OutParam = new SqlParameter("@LastPage", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.Output
+                    };
+                    command2.Parameters.Add(OutParam);
+                    
+                             
+                    command2.ExecuteNonQuery();
+                    
+                    LastPage = (int)OutParam.Value;
+                }
             }
             return list;
         }
+
+
+
+        //public static List<PostDTO> GetAllPosts(int? page, int? count, ref int? MaxPage)
+        //{
+        //    List<PostDTO> list = new List<PostDTO>();
+
+        //    using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+        //    using (SqlCommand command = new SqlCommand("SP_Posts_GetAllPosts", connection))
+        //    {
+        //        command.CommandType = CommandType.StoredProcedure;
+        //        if (page != null)
+        //            command.Parameters.AddWithValue("@Page", page);
+        //        if (count != null)
+        //            command.Parameters.AddWithValue("@Count", count);
+
+        //        SqlParameter OutParam = new SqlParameter("@MaxPage", SqlDbType.Int)
+        //        {
+        //            Direction = ParameterDirection.Output
+        //        };
+        //        command.Parameters.Add(OutParam);
+
+
+        //        connection.Open();
+
+        //        command.ExecuteNonQuery();
+
+
+        //        MaxPage = (int)OutParam.Value;
+        //    }
+        //    return list;
+        //}
+
+
+
+
+
+
         public static PostDTO? GetPostById(int Id)
         {
             using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))

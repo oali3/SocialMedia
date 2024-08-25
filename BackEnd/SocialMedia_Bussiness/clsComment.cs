@@ -29,6 +29,10 @@ namespace SocialMedia_Bussiness
         }
 
 
+        public static List<CommentDTO> GetCommentsByPostId(int postId)
+        {
+            return clsCommentsData.GetCommentsByPostId(postId);
+        }
         public static List<CommentDTO> GetAllComments()
         {
             return clsCommentsData.GetAllComments();

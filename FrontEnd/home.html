@@ -17,7 +17,7 @@
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Programmin Advices</a>
+            <a class="navbar-brand" href="home.html">Programmin Advices</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Profile</a>
@@ -61,30 +61,37 @@
             <div id="Post-Container" class="col-8">
 
 
-                <!-- <div class="card shadow mb-4">
+                <!-- <div class="card shadow mt-3 mb-4">
                     <div class="card-header">
-                        <img class="rounded-circle border border-2 " style="height: 40px; width: 40px;" src="Pics/1.jpg"
-                            alt="??">
-                        <b class="ms-2">@oali3</b>
+                        <img class="rounded-circle border border-2 " style="height: 40px; width: 40px;"
+                            src="Pics/wallpapersden.com_cool-red-mountains-4k_4000x2250.jpg" alt="??">
+                        <b class="ms-2">@qq</b>
                     </div>
-                    <div class="card-body">
-                        <img class="w-100" src="Pics/2.jpg" alt="">
-                        <h6 class="mt-1" style="color: grey;">2 min ago</h6>
-                        <h5 style="font-weight: bold;">Hello world</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus accusantium in
-                            quia illo saepe reiciendis amet quod, ratione ut culpa obcaecati, assumenda delectus
-                            pariatur aliquid fugit ex voluptatem tenetur.</p>
+                    <div class="card-body p-0">
+                        <img style="max-height: 330px; object-fit: cover;" class="w-100" src="Pics/3.jpg" alt="">
+                        <h6 class="ms-3 mt-1" style="color: grey;">1 day ago</h6>
+                        <h5 class="ms-3" style="font-weight: bold;">sdf</h5>
+                        <p class="ms-3">gfdg</p>
                         <hr>
-                        <div class="footer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-pen" viewBox="0 0 16 16">
-                                <path
-                                    d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z" />
-                            </svg>
-                            <span class="ms-1">(3) Comments</span>
+                        <div class="footer ms-3 mb-3">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-pen" viewBox="0 0 16 16">
+                                    <path
+                                        d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z">
+                                    </path>
+                                </svg>
+                                <span class="ms-1">(0) Comments</span>
+                            </div>
+                        </div>
+                        <div class="add-comment d-flex m-2">
+                            <input id="add-comment-input" type="text" placeholder="Add a comment"
+                                class="form-control me-2">
+                            <button id="btn-add-comment" class="btn btn-outline-primary" type="button">Add</button>
                         </div>
                     </div>
                 </div> -->
+
 
             </div>
         </div>
@@ -93,6 +100,12 @@
     <!-- Add Post Button -->
     <button id="add-post-btn" class="bg-primary border shadow d-none" data-bs-toggle="modal"
         data-bs-target="#add-post-modal">+</button>
+
+
+
+
+
+
 
 
 
@@ -152,6 +165,10 @@
                             <label for="message-text" class="col-form-label">Password:</label>
                             <input type="password" class="form-control" id="password-signup-input"></input>
                         </div>
+                        <div class="mb-3">
+                            <label for="image-signup-input" class="col-form-label">Image:</label>
+                            <input type="file" class="form-control" id="image-signup-input"></input>
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -182,7 +199,7 @@
                             <textarea class="form-control" id="post-body"></textarea>
                         </div>
                         <div class="mb-3">
-                            <label for="post-image" class="col-form-label">Title:</label>
+                            <label for="post-image" class="col-form-label">Image:</label>
                             <input type="file" class="form-control" id="post-image"></input>
                         </div>
                     </form>
@@ -195,6 +212,40 @@
             </div>
         </div>
     </div>
+
+    <!-- Edit Post Modal -->
+    <div class="modal fade" id="edit-post-modal" tabindex="-1" aria-labelledby="example3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="example2ModalLabel">Edit Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="edit-post-title" class="col-form-label">Title:</label>
+                            <input type="text" class="form-control" id="edit-post-title"></input>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-post-body" class="col-form-label">Body:</label>
+                            <textarea class="form-control" id="edit-post-body"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-post-image" class="col-form-label">Image:</label>
+                            <input type="file" class="form-control" id="edit-post-image"></input>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="btn-login" type="button" class="btn btn-primary"
+                        onclick="btnEditClicked()">Edit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- Alerts -->

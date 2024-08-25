@@ -34,7 +34,7 @@ namespace SocialMedia_API.Controllers
 
             HttpContext.Response.Headers.Append("Authorization", $"Bearer {Token.Token}");
 
-            return CreatedAtRoute("RegisterUser", new { Id = Token.UserId, token = Token.Token });
+            return CreatedAtRoute("RegisterUser", new {token = Token.Token, user = user.DTO });
         }
 
 

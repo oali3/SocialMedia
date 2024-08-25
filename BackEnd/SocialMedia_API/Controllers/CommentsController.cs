@@ -8,7 +8,21 @@ namespace SocialMedia_API.Controllers
     [ApiController]
     public class CommentsController : ControllerBase
     {
-        [HttpGet(Name = "GetAllComment")]
+        [HttpGet("GetByPostId/{PostId}", Name = "GetCommentsByPostId")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult<IEnumerable<CommentDTO>> GetCommentsByPostId(int PostId)
+        {
+            if (PostId < 1)
+                return BadRequest("Not valid ID");
+            List<CommentDTO> list = clsComment.GetCommentsByPostId(PostId);
+            if (list.Count == 0)
+                return NotFound("No Comment Found");
+            return Ok(list);
+        }
+
+                [HttpGet(Name = "GetAllComment")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public ActionResult<IEnumerable<CommentDTO>> GetAllComments()
@@ -17,6 +31,10 @@ namespace SocialMedia_API.Controllers
                 return NotFound("No Comment Found");
             return Ok(list);
         }
+
+
+
+
         [HttpGet("{id}", Name = "GetCommentById")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
