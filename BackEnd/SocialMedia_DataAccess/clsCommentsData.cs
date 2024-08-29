@@ -199,6 +199,26 @@ namespace SocialMedia_DataAccess
             }
             return AffectedRows != 0;
         }
+        public static bool DeleteAllCommentsByPostId(int? PostId)
+        {
+            if (PostId == null)
+                return false;
+            int AffectedRows = 0;
+            using (SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand("SP_Comments_DeleteAllCommentsByPostId", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.AddWithValue("@PostId", PostId);
+
+                    AffectedRows = command.ExecuteNonQuery();
+                }
+            }
+            return AffectedRows != 0;
+        }
     }
 
 }

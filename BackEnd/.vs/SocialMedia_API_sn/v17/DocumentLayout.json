@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\GitHub\\SocialMedia\\BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E2EA083-9B34-413E-8D6F-980DDE7E6019}|SocialMedia_API\\SocialMedia_API.csproj|c:\\github\\socialmedia\\backend\\socialmedia_api\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E2EA083-9B34-413E-8D6F-980DDE7E6019}|SocialMedia_API\\SocialMedia_API.csproj|solutionrelative:socialmedia_api\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57D8839A-92A9-4365-80F5-D67A1C1ACA2E}|SocialMedia_DataAccess\\SocialMedia_DataAccess.csproj|c:\\github\\socialmedia\\backend\\socialmedia_dataaccess\\clspostsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57D8839A-92A9-4365-80F5-D67A1C1ACA2E}|SocialMedia_DataAccess\\SocialMedia_DataAccess.csproj|solutionrelative:socialmedia_dataaccess\\clspostsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57D8839A-92A9-4365-80F5-D67A1C1ACA2E}|SocialMedia_DataAccess\\SocialMedia_DataAccess.csproj|c:\\github\\socialmedia\\backend\\socialmedia_dataaccess\\clscommentsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57D8839A-92A9-4365-80F5-D67A1C1ACA2E}|SocialMedia_DataAccess\\SocialMedia_DataAccess.csproj|solutionrelative:socialmedia_dataaccess\\clscommentsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E5B4D79-711F-4A21-9A40-B734BC9A6903}|SocialMedia_Bussiness\\SocialMedia_Bussiness.csproj|c:\\github\\socialmedia\\backend\\socialmedia_bussiness\\clspost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E5B4D79-711F-4A21-9A40-B734BC9A6903}|SocialMedia_Bussiness\\SocialMedia_Bussiness.csproj|solutionrelative:socialmedia_bussiness\\clspost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E5B4D79-711F-4A21-9A40-B734BC9A6903}|SocialMedia_Bussiness\\SocialMedia_Bussiness.csproj|c:\\github\\socialmedia\\backend\\socialmedia_bussiness\\clscomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E5B4D79-711F-4A21-9A40-B734BC9A6903}|SocialMedia_Bussiness\\SocialMedia_Bussiness.csproj|solutionrelative:socialmedia_bussiness\\clscomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E2EA083-9B34-413E-8D6F-980DDE7E6019}|SocialMedia_API\\SocialMedia_API.csproj|c:\\github\\socialmedia\\backend\\socialmedia_api\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E2EA083-9B34-413E-8D6F-980DDE7E6019}|SocialMedia_API\\SocialMedia_API.csproj|solutionrelative:socialmedia_api\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57D8839A-92A9-4365-80F5-D67A1C1ACA2E}|SocialMedia_DataAccess\\SocialMedia_DataAccess.csproj|c:\\github\\socialmedia\\backend\\socialmedia_dataaccess\\clscommentsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57D8839A-92A9-4365-80F5-D67A1C1ACA2E}|SocialMedia_DataAccess\\SocialMedia_DataAccess.csproj|solutionrelative:socialmedia_dataaccess\\clscommentsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,39 +39,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PostsController.cs",
-              "DocumentMoniker": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_API\\Controllers\\PostsController.cs",
-              "RelativeDocumentMoniker": "SocialMedia_API\\Controllers\\PostsController.cs",
-              "ToolTip": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_API\\Controllers\\PostsController.cs",
-              "RelativeToolTip": "SocialMedia_API\\Controllers\\PostsController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAA5wCkAAAAIAAAA",
+              "Title": "clsPost.cs",
+              "DocumentMoniker": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_Bussiness\\clsPost.cs",
+              "RelativeDocumentMoniker": "SocialMedia_Bussiness\\clsPost.cs",
+              "ToolTip": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_Bussiness\\clsPost.cs",
+              "RelativeToolTip": "SocialMedia_Bussiness\\clsPost.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAA8wFgAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T08:37:08.829Z",
+              "WhenOpened": "2024-08-25T11:56:35.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CommentsController.cs",
-              "DocumentMoniker": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_API\\Controllers\\CommentsController.cs",
-              "RelativeDocumentMoniker": "SocialMedia_API\\Controllers\\CommentsController.cs",
-              "ToolTip": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_API\\Controllers\\CommentsController.cs",
-              "RelativeToolTip": "SocialMedia_API\\Controllers\\CommentsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T12:44:15.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "clsComment.cs",
               "DocumentMoniker": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_Bussiness\\clsComment.cs",
               "RelativeDocumentMoniker": "SocialMedia_Bussiness\\clsComment.cs",
               "ToolTip": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_Bussiness\\clsComment.cs",
               "RelativeToolTip": "SocialMedia_Bussiness\\clsComment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAA/AAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAcwFcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T12:44:12.398Z"
+              "WhenOpened": "2024-08-23T12:44:12.398Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -89,21 +70,10 @@
               "RelativeDocumentMoniker": "SocialMedia_DataAccess\\clsCommentsData.cs",
               "ToolTip": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_DataAccess\\clsCommentsData.cs",
               "RelativeToolTip": "SocialMedia_DataAccess\\clsCommentsData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAcAAAA",
+              "ViewState": "AQIAAKAAAAAAAAAAAAAtwMQAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T17:12:25.967Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "clsPostsData.cs",
-              "DocumentMoniker": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_DataAccess\\clsPostsData.cs",
-              "RelativeDocumentMoniker": "SocialMedia_DataAccess\\clsPostsData.cs",
-              "ToolTip": "C:\\GitHub\\SocialMedia\\BackEnd\\SocialMedia_DataAccess\\clsPostsData.cs",
-              "RelativeToolTip": "SocialMedia_DataAccess\\clsPostsData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABrAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T13:17:27.104Z"
+              "WhenOpened": "2024-08-22T17:12:25.967Z",
+              "EditorCaption": ""
             }
           ]
         },

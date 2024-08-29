@@ -114,11 +114,12 @@ function GetAllPosts(page = 1) {
     })
 }
 async function AddPostToHtml(post) {
-
     let currentUser = JSON.parse(localStorage.getItem("user"))
-    let btnEdit = ''
+    let btnEditDelte = ''
     if (currentUser != null && post.userId == currentUser.id) {
-        btnEdit = `\n<button class="btn btn-secondary" style="float: right;" onclick="btnEditPostClicked(event, '${post.title}', '${post.body}', ${post.id})" data-bs-toggle="modal"
+        btnEditDelte = `\n<button class="btn btn-danger" style="float: right; margin-left: 10px;" onclick="btnDeletePostClicked(event, ${post.id})" data-bs-toggle="modal"
+                            data-bs-target="#delete-post-modal">Delete</button>
+                    <button class="btn btn-secondary" style="float: right;" onclick="btnEditPostClicked(event, '${post.title}', '${post.body}', ${post.id})" data-bs-toggle="modal"
                             data-bs-target="#edit-post-modal">edit</button>`
     }
 
@@ -126,7 +127,7 @@ async function AddPostToHtml(post) {
                     <div class="card-header">
                         <img class="rounded-circle border border-2 " style="height: 40px; width: 40px;" src="Pics/${post.aothor.image ?? "0.png"}"
                             alt="??">
-                        <b class="ms-2">@${post.aothor.userName}</b>${btnEdit}
+                        <b class="ms-2">@${post.aothor.userName}</b>${btnEditDelte}
                     </div>
                     <div class="card-body p-0">
                         <img style="max-height: 330px; object-fit: cover;" class="w-100" src="Pics/${post.image ?? ""}" alt="">
@@ -304,7 +305,7 @@ function handleInfiniteScroll() {
         }
     }
 }
-function btnEditClicked(event, oldTitle, oldBody) {
+function btnEditClicked() {
     let Title = document.getElementById("edit-post-title").value
     let Body = document.getElementById("edit-post-body").value
     const Image = document.getElementById("edit-post-image").files[0]
@@ -338,5 +339,26 @@ function btnEditPostClicked(event, oldTitle, oldBody, postId) {
         post = response.data
     }).catch((error) => {
         ShowCustomAlert(error.message, true)
+    })
+}
+function btnDeletePostClicked(event, postId) {
+    event.stopPropagation();
+    axios.get(`${Url}/Posts/${postId}`).then((response) => {
+        post = response.data
+    }).catch((error) => {
+        ShowCustomAlert(error.message, true)
+    })
+}
+function btnDeleteClicked() {
+
+
+
+    axios.delete(`${Url}/Posts/${post.id}`).then((response) => {
+        bootstrap.Modal.getInstance(document.getElementById("delete-post-modal")).hide()
+        ShowCustomAlert('Post Deleted Successfully')
+        GetAllPosts()
+        setUpUI()
+    }).catch((error) => {
+        ShowCustomAlert(error.response.data, true)
     })
 }

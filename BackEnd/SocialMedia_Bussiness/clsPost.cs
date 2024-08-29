@@ -85,6 +85,7 @@ namespace SocialMedia_Bussiness
 
         public static bool DeletePost(int Id)
         {
+            clsComment.DeleteAllCommentsByPostId(Id);
             return clsPostsData.DeletePost(Id);
         }
 

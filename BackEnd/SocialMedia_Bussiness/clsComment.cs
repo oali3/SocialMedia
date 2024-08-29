@@ -86,6 +86,10 @@ namespace SocialMedia_Bussiness
         {
             return clsCommentsData.DeleteComment(Id);
         }
+        public static bool DeleteAllCommentsByPostId(int PostId)
+        {
+            return clsCommentsData.DeleteAllCommentsByPostId(PostId);
+        }
 
     }
 
